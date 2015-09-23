@@ -22,6 +22,7 @@
 
 default['ruby_install']['version'] = '0.5.0'
 default['ruby_install']['checksum'] = 'aa4448c2c356510cc7c2505961961a17bd3f3435842831e04c8516eb703afd19'
+default['ruby_install']['url'] = "https://codeload.github.com/postmodern/ruby-install/tar.gz/v#{node['ruby_install']['version']}"
 
 # Install rubies into /opt/rubies as expected by Chruby.
 default['ruby_install']['default_ruby_base_path'] = '/opt/rubies'

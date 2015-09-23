@@ -47,7 +47,7 @@ end
 include_recipe 'ark'
 
 ark 'ruby_install' do
-  url "https://codeload.github.com/postmodern/ruby-install/tar.gz/v#{node['ruby_install']['version']}" # rubocop:disable LineLength
+  url node['ruby_install']['url']
   extension 'tar.gz'
   checksum node['ruby_install']['checksum']
   prefix_root '/tmp' # Don't need /usr/local/ruby-install
