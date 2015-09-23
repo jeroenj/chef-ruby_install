@@ -51,6 +51,7 @@ ark 'ruby_install' do
   extension 'tar.gz'
   checksum node['ruby_install']['checksum']
   prefix_root '/tmp' # Don't need /usr/local/ruby-install
+  version node['ruby_install']['version']
   action :install_with_make
 end
 
